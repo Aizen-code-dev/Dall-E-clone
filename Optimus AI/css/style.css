@@ -1,0 +1,76 @@
+body {
+    text-align: center;
+  }
+  
+  h1 {
+    margin-top: 50px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  #inputContainer {
+    margin-top: 50px;
+    animation: slide-up 1s ease-in-out;
+  }
+  
+  #textInput {
+    width: 400px;
+    height: 150px;
+    margin-bottom: 20px;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  #textInput:focus {
+    border-color: #FF8C00;
+  }
+  
+  #generateButton {
+    padding: 10px 20px;
+    background-color: #FF8C00;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  #generateButton:hover {
+    background-color: #FFA500;
+  }
+  
+  #outputContainer {
+    margin-top: 50px;
+    animation: slide-up 1s ease-in-out;
+  }
+  
+  #loadingMessage {
+    display: none;
+    margin-bottom: 20px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  #outputImage {
+    max-width: 500px;
+    max-height: 500px;
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  @keyframes slide-up {
+    0% {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
